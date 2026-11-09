@@ -96,7 +96,7 @@ footer{max-width:720px; margin:0 auto; padding:0 20px 40px; font-family:system-u
       <tr><td>Isi kode QR</td><td>Berisi alamat server ujian dan kode akses sementara dari pengawas.</td><td>Alamat dipakai untuk menghubungi server sekolah</td></tr>
       <tr><td>Nomor Ujian</td><td>Dibaca dari kolom login pada halaman ujian, lalu disimpan di perangkat agar catatan aktivitas dapat dikaitkan dengan peserta.</td><td>Ya, bersama catatan aktivitas</td></tr>
       <tr><td>Catatan aktivitas ujian</td><td>ID sesi, waktu, jenis kejadian (mulai, lanjut, pelanggaran, selesai), alasan pelanggaran (misalnya keluar dari aplikasi atau data seluler aktif saat ujian luring), dan jumlah pelanggaran.</td><td>Ya</td></tr>
-      <tr><td>Informasi perangkat</td><td>Model dan versi Android. Informasi ini ikut terkirim ke situs ujian sebagai bagian dari identitas peramban (user agent).</td><td>Ya, ke server ujian sekolah</td></tr>
+      <tr><td>Informasi perangkat</td><td>Model dan versi Android. Informasi ini ikut terkirim ke server ujian sebagai bagian dari identitas peramban (user agent).</td><td>Ya, ke server ujian sekolah</td></tr>
       <tr><td>Hasil pemeriksaan perangkat</td><td>Aplikasi memeriksa di perangkat apakah perangkat berupa emulator atau lingkungan virtual, atau apakah terpasang aplikasi virtualisasi tertentu. Hasilnya dipakai untuk memutuskan apakah ujian boleh dimulai.</td><td>Tidak</td></tr>
       <tr><td>Status jaringan</td><td>Status data seluler diperiksa di perangkat pada ujian luring (jaringan lokal sekolah).</td><td>Tidak</td></tr>
       <tr><td>Status baterai dan jam</td><td>Ditampilkan di layar ujian.</td><td>Tidak</td></tr>
@@ -117,7 +117,8 @@ footer{max-width:720px; margin:0 auto; padding:0 20px 40px; font-family:system-u
   <p>Kami tidak memakai data ini untuk iklan dan tidak menjualnya.</p>
 
   <h2 id="simpan">3. Penyimpanan dan pengiriman</h2>
-  <p>Catatan aktivitas disimpan di perangkat dan dikirim ke server yang dikelola atau ditunjuk MA Matholi’ul Anwar. Jika pengiriman gagal, aplikasi mencoba lagi di kesempatan berikutnya. Setelah diterima, data disimpan selama satu tahun ajaran, lalu dihapus. Data yang tersimpan di perangkat dihapus saat ujian selesai secara normal atau ketika aplikasi dihapus.</p>
+  <p>Catatan aktivitas disimpan di perangkat dan dikirim ke server yang dikelola atau ditunjuk MA Matholi’ul Anwar. Jika pengiriman gagal, aplikasi mencoba lagi di kesempatan berikutnya. Setelah diterima, data disimpan selama satu tahun ajaran, lalu dihapus.</p>
+  <p>Saat ujian selesai secara normal, ID sesi, Nomor Ujian, dan alamat API yang tersimpan di perangkat dihapus. Berkas catatan aktivitas lokal tetap ada di perangkat sampai aplikasi dihapus atau datanya dibersihkan melalui pengaturan Android.</p>
   <p>Kami tidak membagikan data kepada pihak ketiga, kecuali bila diwajibkan oleh hukum.</p>
 
   <h2 id="pihak-ketiga">4. Server ujian</h2>
